@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM armbuild/debian:wheezy
 
 RUN apt-get update && apt-get install -y \
 		bzr \

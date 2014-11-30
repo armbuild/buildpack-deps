@@ -1,4 +1,4 @@
-FROM buildpack-deps:wheezy-micro
+FROM armbuild/buildpack-deps:wheezy-micro
 
 RUN apt-get update && apt-get install -y \
 		autoconf \

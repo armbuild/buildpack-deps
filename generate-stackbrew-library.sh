@@ -10,13 +10,13 @@ cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 versions=( */ )
 versions=( "${versions[@]%/}" )
-url='git://github.com/docker-library/docker-buildpack-deps'
+url='git://github.com/armbuild/buildpack-deps'
 
 echo '# maintainer: InfoSiftr <github@infosiftr.com> (@infosiftr)'
 
 for version in "${versions[@]}"; do
 	versionAliases=( $version ${aliases[$version]} )
-	
+
 	for variant in micro; do
 		commit="$(git log -1 --format='format:%H' -- "$version/$variant")"
 		echo
@@ -29,7 +29,7 @@ for version in "${versions[@]}"; do
 			echo "$va: ${url}@${commit} $version/$variant"
 		done
 	done
-	
+
 	commit="$(git log -1 --format='format:%H' -- "$version")"
 	echo
 	for va in "${versionAliases[@]}"; do
