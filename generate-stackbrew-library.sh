@@ -12,7 +12,7 @@ versions=( */ )
 versions=( "${versions[@]%/}" )
 url='git://github.com/armbuild/buildpack-deps'
 
-echo '# maintainer: InfoSiftr <github@infosiftr.com> (@infosiftr)'
+echo '# maintainer: Scaleway <opensource@scaleway.com>'
 
 for version in "${versions[@]}"; do
 	versionAliases=( $version ${aliases[$version]} )
