@@ -1,4 +1,4 @@
-FROM buildpack-deps:utopic-scm
+FROM armbuild/buildpack-deps:utopic-scm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		autoconf \

@@ -1,4 +1,4 @@
-FROM buildpack-deps:stretch-curl
+FROM armbuild/buildpack-deps:stretch-curl
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		bzr \

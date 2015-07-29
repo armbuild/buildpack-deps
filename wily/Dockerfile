@@ -1,4 +1,4 @@
-FROM buildpack-deps:wily-scm
+FROM armbuild/buildpack-deps:wily-scm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		autoconf \

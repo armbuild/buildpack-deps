@@ -1,4 +1,4 @@
-FROM buildpack-deps:trusty-scm
+FROM armbuild/buildpack-deps:trusty-scm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		autoconf \

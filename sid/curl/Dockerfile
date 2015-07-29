@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM armbuild/debian:sid
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \

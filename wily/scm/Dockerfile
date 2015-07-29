@@ -1,4 +1,4 @@
-FROM buildpack-deps:wily-curl
+FROM armbuild/buildpack-deps:wily-curl
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		bzr \

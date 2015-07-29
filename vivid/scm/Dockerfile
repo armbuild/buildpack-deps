@@ -1,4 +1,4 @@
-FROM buildpack-deps:vivid-curl
+FROM armbuild/buildpack-deps:vivid-curl
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		bzr \

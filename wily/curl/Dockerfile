@@ -1,4 +1,4 @@
-FROM ubuntu-debootstrap:wily
+FROM armbuild/ubuntu-debootstrap:wily
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \

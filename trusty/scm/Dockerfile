@@ -1,4 +1,4 @@
-FROM buildpack-deps:trusty-curl
+FROM armbuild/buildpack-deps:trusty-curl
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		bzr \

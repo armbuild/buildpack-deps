@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie-curl
+FROM armbuild/buildpack-deps:jessie-curl
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		bzr \

@@ -1,4 +1,4 @@
-FROM buildpack-deps:sid-curl
+FROM armbuild/buildpack-deps:sid-curl
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		bzr \

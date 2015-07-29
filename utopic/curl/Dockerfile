@@ -1,4 +1,4 @@
-FROM ubuntu-debootstrap:utopic
+FROM armbuild/ubuntu-debootstrap:utopic
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \

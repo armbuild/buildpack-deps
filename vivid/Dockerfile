@@ -1,4 +1,4 @@
-FROM buildpack-deps:vivid-scm
+FROM armbuild/buildpack-deps:vivid-scm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		autoconf \
